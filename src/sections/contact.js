@@ -48,7 +48,7 @@ const Contact = () => {
       description={`Let us mentor you on React, Docker, Symfony, Laravel, Drupal, Testing methodologies!`}
       id={"training"}
     >
-      <form netlify>
+      <form netlify={true}>
         <Field type="email" placeholder={`Email`} required />
         <Field type="text" placeholder={`Name`} required />
         <TextareaField
