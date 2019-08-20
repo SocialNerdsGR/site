@@ -48,8 +48,14 @@ const Contact = () => {
       description={`Let us mentor you on React, Docker, Symfony, Laravel, Drupal, Testing methodologies!`}
       id={"training"}
     >
-      <form name="Contact form" method="POST" data-netlify={true}>
-        <input type="hidden" name="form-name" value="Contact Form" />
+      <form
+        name="contact"
+        method="POST"
+        data-netlify={true}
+        action="/workshops"
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <Field type="email" name="email" placeholder={`Email`} required />
         <Field type="text" name="name" placeholder={`Name`} required />
         <TextareaField
