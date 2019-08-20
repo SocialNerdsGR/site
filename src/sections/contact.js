@@ -48,10 +48,12 @@ const Contact = () => {
       description={`Let us mentor you on React, Docker, Symfony, Laravel, Drupal, Testing methodologies!`}
       id={"training"}
     >
-      <form netlify={true}>
-        <Field type="email" placeholder={`Email`} required />
-        <Field type="text" placeholder={`Name`} required />
+      <form name="Contact form" method="POST" data-netlify={true}>
+        <input type="hidden" name="form-name" value="Contact Form" />
+        <Field type="email" name="email" placeholder={`Email`} required />
+        <Field type="text" name="name" placeholder={`Name`} required />
         <TextareaField
+          name="message"
           placeholder={`Tell us what you need`}
           required
           rows={`5`}
