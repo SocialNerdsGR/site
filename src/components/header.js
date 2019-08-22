@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <Media query="(min-width: 481px) and (max-width: 767px)">
+      <Media query="(min-width: 320px) and (max-width: 767px)">
         {matches =>
           !matches ? (
             <DesktopNav scroll={scroll} navItems={navItems} />
