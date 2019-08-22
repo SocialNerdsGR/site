@@ -90,7 +90,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    height: auto;
+    height: 50vh;
   }
   .title {
     font-size: 3rem;
