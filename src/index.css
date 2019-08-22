@@ -1,6 +1,7 @@
 :root {
   font-size: 20px;
 }
+
 html {
   overflow-x: hidden;
 }
@@ -63,7 +64,6 @@ body {
   line-height: 25rem;
   background-color: rgba(24, 162, 222, 0.5);
   border-radius: 50%;
-  margin-left: 10px;
 }
 .social {
   margin: 0;
@@ -86,4 +86,16 @@ body {
   color: white;
   background-color: #18a2de;
   border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .socialnerds {
+    line-height: 15rem;
+  }
 }

@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const Wrapper = styled.span`
   font-size: 1.5rem;
-  margin: 0;
+  margin-left: 10px;
+  line-height: 0;
 `;
 const Social = styled.span`
   color: #18a2de;

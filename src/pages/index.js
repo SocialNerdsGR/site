@@ -1,4 +1,5 @@
 import React from "react";
+import Media from "react-media";
 
 import Layout from "../components/layout";
 import Nerds from "../sections/nerds";
@@ -13,8 +14,16 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="circle"></div>
-      <div className="circle2"></div>
+      <Media
+        query="(min-width: 1281px)"
+        render={() => (
+          <>
+            <div className="circle"></div>
+            <div className="circle2"></div>
+          </>
+        )}
+      />
+
       <div className="container">
         <div>
           <h1 className="title">
