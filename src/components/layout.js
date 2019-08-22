@@ -1,11 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 import Social from "./social";
 import Header from "./header";
 import "./layout.css";
+
+const GlobalStyle = createGlobalStyle`
+  :root {
+    font-size: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+`;
+
 
 const Footer = styled.footer`
   text-align: center;
@@ -26,6 +38,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="main">{children}</main>
       <Social />

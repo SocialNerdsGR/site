@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin: auto;
+  margin: 50px auto;
   max-width: 960px;
 `;
 const StyledSection = styled.section`

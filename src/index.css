@@ -1,13 +1,4 @@
-:root {
-  font-size: 20px;
-}
 
-html {
-  overflow-x: hidden;
-}
-body {
-  height: 100vh;
-}
 
 .container {
   height: 100vh;
@@ -24,55 +15,7 @@ body {
   flex-direction: column;
 }
 
-.circle {
-  z-index: -1000;
-  position: absolute;
-  bottom: calc(100% - 360px);
-  left: calc(100% - 150px);
-  background: rgba(24, 162, 222, 0.6);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  overflow: hidden;
-}
 
-.circle2 {
-  z-index: -1000;
-  position: absolute;
-  top: calc(100% - 280px);
-  left: -150px;
-  background: rgba(24, 162, 222, 0.6);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-}
-
-.title {
-  color: #555;
-  font-weight: 400;
-  font-size: 5rem;
-  display: flex;
-  margin: auto;
-}
-
-.hello {
-  justify-content: center;
-}
-
-.socialnerds {
-  padding: 10px;
-  line-height: 25rem;
-  background-color: rgba(24, 162, 222, 0.5);
-  border-radius: 50%;
-}
-.social {
-  margin: 0;
-  color: #18a2de;
-}
-
-.nerds {
-  color: #838383;
-}
 
 .hire-container {
   width: 100%;
