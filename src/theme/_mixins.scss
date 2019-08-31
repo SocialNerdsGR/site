@@ -1,0 +1,16 @@
+@mixin generic-transition($attr) {
+  transition: $attr 0.5s ease-in-out;
+}
+
+@mixin button {
+  color: $blue;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: $blue 1px solid;
+  border-radius: 25px;
+  @include generic-transition(all);
+  &:hover {
+    background-color: $blue;
+    color: white;
+  }
+}

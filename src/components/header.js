@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import styled from "styled-components";
-import Media from "react-media";
 
 import MobileNav from "./mobile-nav";
 import DesktopNav from "./desktop-nav";
@@ -11,19 +9,12 @@ const navItems = [
   { name: "Training", link: "#training" },
 ];
 
-const HeaderWrapper = styled.header`
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 2;
-`;
-
 const Header = () => {
   const [scroll, setScroll] = useState(0);
   const savedHandler = useRef();
 
   const handler = useCallback(() => {
-    setScroll(window.scrollY);
+    setScroll(window.scrollY > 0);
   }, [setScroll]);
 
   useEffect(() => {
@@ -40,17 +31,10 @@ const Header = () => {
   }, []);
 
   return (
-    <HeaderWrapper>
-      <Media query="(min-width: 320px) and (max-width: 767px)">
-        {matches =>
-          !matches ? (
-            <DesktopNav scroll={scroll} navItems={navItems} />
-          ) : (
-            <MobileNav scroll={scroll} navItems={navItems} />
-          )
-        }
-      </Media>
-    </HeaderWrapper>
+    <nav className={`navigation`}>
+      <MobileNav scroll={scroll} navItems={navItems} />
+      <DesktopNav scroll={scroll} navItems={navItems} />
+    </nav>
   );
 };
 

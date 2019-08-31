@@ -1,15 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
-import styled from "styled-components";
 
 import Section from "../components/section";
-
-const Wrapper = styled.div`
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
-`;
 
 const Videos = () => {
   const { allMarkdownRemark: videos } = useStaticQuery(graphql`
@@ -26,7 +19,7 @@ const Videos = () => {
               stack
               image {
                 childImageSharp {
-                  fluid(maxWidth: 250, maxHeight: 180, quality: 80) {
+                  fluid(maxWidth: 400, maxHeight: 400, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -45,7 +38,7 @@ const Videos = () => {
       id={"youtube"}
       dark={true}
     >
-      <Wrapper>
+      <div className={'videos'}>
         {videos.edges.map(item => (
           <a
             key={item.node.id}
@@ -53,11 +46,10 @@ const Videos = () => {
             rel="noopener noreferrer"
             href={item.node.frontmatter.link}
           >
-            <Image fluid={item.node.frontmatter.image.childImageSharp.fluid} />
-            <span>{item.node.frontmatter.stack}</span>
+            <Image className={`image`} imgStyle={{transition: 'all 0.5s ease-in-out'}} alt={item.node.frontmatter.stack} fluid={item.node.frontmatter.image.childImageSharp.fluid} />
           </a>
         ))}
-      </Wrapper>
+      </div>
     </Section>
   );
 };

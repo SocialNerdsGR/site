@@ -1,6 +1,6 @@
 ---
 link: "https://www.youtube.com/watch?v=9QhUmYTS_Uc"
-stack: "Docker"
-image: "agile.png"
+stack: "React"
+image: "react.png"
 type: videos
 ---

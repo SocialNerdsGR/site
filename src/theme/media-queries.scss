@@ -1,0 +1,31 @@
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navigation .mobile-nav {
+    display: block;
+  }
+  .desktop-nav {
+    display: none;
+  }
+
+  .logo-wrapper {
+    height: auto;
+  }
+
+  .videos, .nerds {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    .image {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .circle {
+    display: none;
+  }
+  .logo-image {
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -1,13 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from "gatsby-image"
 
-import styled from 'styled-components';
-
-const Image = styled(Img)`
-  width: 500px;
-  height: 500px;
-`;
 const LogoImage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -21,7 +15,7 @@ const LogoImage = () => {
     }
   `);
 
-  return <Image fluid={data.placeholderImage.childImageSharp.fluid} alt={`logo`}/>
+  return <Image className={`logo-image`} fluid={data.placeholderImage.childImageSharp.fluid} alt={`logo`}/>
 };
 
 export default LogoImage;
