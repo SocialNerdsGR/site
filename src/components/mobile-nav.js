@@ -13,17 +13,19 @@ const MobileNav = ({ scroll, navItems }) => {
   }
 
   return (
-    <div className={`mobile-nav ${scroll && `scroll`}`}>
-      <Link
-        to="/"
-      >
-        <Logo/>
-      </Link>
-      <Burger toggleMenu={toggleMenu}/>
+    <>
+      <div className={`mobile-nav ${scroll && `scroll`}`}>
+        <Link
+          to="/"
+        >
+          <Logo/>
+        </Link>
+        <Burger toggleMenu={toggleMenu}/>
+      </div>
       {menuOpen ? (
         <Drawer setMenuOpen={setMenuOpen} navItems={navItems} />
       ) : null}
-    </div>
+    </>
   );
 };
 

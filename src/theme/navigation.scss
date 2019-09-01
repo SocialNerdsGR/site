@@ -12,53 +12,32 @@
   }
 
   .desktop-nav, .mobile-nav {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
-  .mobile-nav {
-    .drawer {
-      height: 100vh;
-      width: 100vw;
-      background-color: white;
-      z-index: 1000;
-      .items {
-        display: flex;
-        margin: 0;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        list-style: none;
-        height: 100%;
-      }
-    }
-    display: none;
-
-    .burger {
-      float: right;
-      margin-right: 20px;
-
-      .line {
-        width: 20px;
-        border: #18a2de solid 2px;
-        margin-bottom: 3px;
-        border-radius: 25px;
-      }
+  .desktop-nav {
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 
   .navigation__items {
-    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
   }
 
   .item {
     color: #555;
-    display: inline-block;
     text-decoration: none;
     margin-right: 10px;
 
     .link {
       color: #555;
-      display: inline-block;
       text-decoration: none;
     }
 
@@ -68,11 +47,53 @@
 
     &:after {
       display: block;
-      padding-top: 5px;
+      padding-top: 1px;
       content: "";
-      border-bottom: solid 3px #18a2de;
+      border-bottom: solid 1.5px $blue;
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
+    }
+  }
+
+  .mobile-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+
+    .nav-logo {
+      margin-left: 20px;
+    }
+
+    .burger {
+      margin-right: 20px;
+      .line {
+        width: 20px;
+        border: #18a2de solid 2px;
+        margin-bottom: 3px;
+        border-radius: 25px;
+      }
+    }
+  }
+  .drawer {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 1000;
+    @include generic-transition(all);
+    .items {
+      width: 100%;
+      display: flex;
+      margin: 0;
+      font-size: 1.4rem;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      list-style: none;
+      height: 100%;
+      .item {
+        margin: 0;
+      }
     }
   }
 }
