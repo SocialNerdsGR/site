@@ -27,10 +27,12 @@ a {
   align-items: center;
   justify-content: center;
   height: 100vh;
+
   .flex {
     display: flex;
     flex-direction: column;
   }
+
   .hire {
     margin-top: 10px;
     text-decoration: none;
@@ -38,6 +40,7 @@ a {
     @include button();
   }
 }
+
 //
 //.logo {
 //  margin-left: 20px;
@@ -50,17 +53,21 @@ section {
   font-size: 1.8rem;
   padding: 20px;
   margin: 20px 0;
+
   h3 {
     color: $blue;
     padding: 10px;
   }
+
   p {
     color: $grey;
     font-size: 1.1rem;
     padding-bottom: 40px;
   }
+
   &.dark {
     background-color: $blue;
+
     h3, p {
       color: white;
     }
@@ -102,12 +109,15 @@ section {
   .image {
     border-radius: 50%;
   }
+
   .link {
     position: relative;
-    &:hover .overlay{
+
+    &:hover .overlay {
       opacity: 0.8;
     }
   }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -119,6 +129,7 @@ section {
     border-radius: 50%;
     z-index: 2;
     @include generic-transition(opacity);
+
     .text {
       color: white;
       font-size: 1.2rem;
@@ -138,9 +149,11 @@ section {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
+
   img {
     @include generic-transition(filter);
     filter: grayscale(50%);
+
     &:hover {
       filter: grayscale(0%);
     }
@@ -156,6 +169,7 @@ section {
     font-size: 1.2rem;
     margin-bottom: 10px;
     box-sizing: border-box;
+
     &:focus {
       outline: none;
     }
@@ -172,6 +186,7 @@ section {
     min-width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+
     &:focus {
       outline: none;
     }
@@ -191,11 +206,13 @@ section {
   font-size: 1.4rem;
   margin: auto;
   padding: 10px;
+
   .image {
     width: 2rem;
     fill: white;
     margin: 0 10px 0 0;
     @include generic-transition(filter);
+
     &:hover {
       filter: opacity(0.8);
     }
@@ -209,40 +226,46 @@ section {
     color: $black;
     margin: 20px 0;
   }
+
   .cards {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     margin: 10px 0;
+
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
       padding: 10px;
       position: relative;
 
       &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       }
 
       .head {
         display: flex;
         align-items: center;
         margin-top: 20px;
+
         h4 {
           margin-left: 10px;
           font-size: 1.4rem;
           color: $black;
         }
       }
+
       .info {
         p, span {
           padding: 10px;
         }
+
         .summary {
           font-size: 1.1rem;
           line-height: 1.2rem;
           color: $black;
         }
+
         .date {
           position: absolute;
           top: 0;
@@ -255,22 +278,28 @@ section {
       }
     }
   }
+
   .subscribe {
     margin-top: 40px;
+
     h2, h3 {
       margin-top: 10px;
       text-align: center;
       color: $black;
     }
+
     h2 {
       font-size: 2rem;
     }
+
     h3 {
       font-size: 1.8rem;
     }
+
     form {
       margin: 20px 0;
       display: flex;
+
       input, button {
         color: $blue;
         border: $blue 1px solid;
@@ -278,27 +307,69 @@ section {
         padding: 20px;
         vertical-align: middle;
         font-size: 1.1rem;
+
         &:focus {
           outline: none;
         }
       }
+
       input {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         width: 75%;
         box-sizing: border-box;
       }
+
       button {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        width: 25%;border-left: 0;
+        width: 25%;
+        border-left: 0;
         @include generic-transition(all);
+
         &:hover {
           background-color: $blue;
           color: white;
         }
       }
     }
+  }
+}
+
+// Workshop page.
+.workshop {
+  text-align: left;
+  section {
+    padding: 0;
+  }
+
+  h1 {
+    color: $blue;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  p {
+    color: $black;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: inside;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: left;
+    margin-bottom: 10px;
   }
 }
 

@@ -1,4 +1,3 @@
-
 @media (min-width: 320px) and (max-width: 767px) {
   .navigation .mobile-nav {
     display: flex;
@@ -14,8 +13,52 @@
   .videos, .nerds {
     grid-template-columns: 1fr;
     justify-items: center;
+
     .image {
       width: 250px;
+    }
+  }
+
+  .workshops {
+    margin: 0 20px;
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .subscribe {
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+      }
+      form {
+        button {
+          background-color: rgb(255, 255, 255);;
+          font-size: 0.9rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .workshop {
+    padding: 0 20px;
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    ul {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
     }
   }
 }
