@@ -1,5 +1,5 @@
 ---
-link: "https://www.youtube.com/watch?v=9QhUmYTS_Uc"
+link: "https://youtu.be/c7Pa6Ahq7TA"
 stack: "TensorFlow"
 image: "tensorflow.png"
 type: videos

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `SocialNerds`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Agile Web Development. We are a community. Hire us for your amazing project on Agile, React, Symfony, Laravel, Drupal, Testing methodologies.`,
     author: `SocialNerds`,
   },
   plugins: [
@@ -18,6 +18,20 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-12390630-18`,
+        anonymize: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "UA-12390630-18",
+        includeInDevelopment: false,
       },
     },
     `gatsby-transformer-remark`,

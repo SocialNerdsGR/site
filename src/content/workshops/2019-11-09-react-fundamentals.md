@@ -5,9 +5,8 @@ date: 11/09/2019
 summary: Learn how to build complex user interfaces with React, by participating in SocialNerds 8-hour workshop. 
 image: images/react.png
 type: workshops
+banner: images/2019-11-09-react-fundamentals.jpg
 ---
-
-# React fundamentals
 
 Nowadays, systems require complex user interfaces and React is one of the best libraries to build them. Learn how to build these user interfaces by participating in SocialNerds 8-hour React Workshop.
 

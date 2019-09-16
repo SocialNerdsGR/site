@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Image from 'gatsby-image';
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -17,6 +18,9 @@ class BlogPostTemplate extends React.Component {
         />
         <div className="container">
           <article className={`workshop`}>
+            <Image className={`banner`} fluid={post.frontmatter.banner.childImageSharp.fluid} />
+              <h1>{post.frontmatter.title}</h1>
+              <a className={`ticket`} href={post.frontmatter.link}>Buy a ticket</a>
             <section dangerouslySetInnerHTML={{ __html: post.html }}/>
           </article>
         </div>
@@ -43,6 +47,14 @@ export const pageQuery = graphql`
         title
         date
         summary
+        link
+        banner {
+          childImageSharp {
+            fluid(maxWidth: 500, maxHeight: 250, quality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

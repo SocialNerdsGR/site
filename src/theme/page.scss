@@ -165,7 +165,7 @@ section {
     width: 100%;
     border: #18a2de 1px solid;
     border-radius: 25px;
-    padding-left: 10px;
+    padding: 5px 0 5px 10px;
     font-size: 1.2rem;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -182,6 +182,7 @@ section {
     padding-left: 10px;
     padding-top: 5px;
     font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
     min-width: 100%;
     max-width: 100%;
@@ -339,21 +340,42 @@ section {
 // Workshop page.
 .workshop {
   text-align: left;
+
   section {
     padding: 0;
   }
 
   h1 {
     color: $blue;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 3rem;
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .ticket {
+    color: white;
+    background-color: $blue;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: $blue 1px solid;
+    border-radius: 25px;
+    @include generic-transition(all);
+
+    &:hover {
+      background-color: white;
+      color: $blue;
+    }
+
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    width: 100%;
   }
 
   p {
     color: $black;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: left;
   }
 
@@ -367,9 +389,18 @@ section {
   ul {
     list-style: inside;
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     text-align: left;
     margin-bottom: 10px;
+    color: $black;
+  }
+
+  a {
+    color: $light-blue;
+
+    &:hover {
+      color: darken($light-blue, 10);
+    }
   }
 }
 
