@@ -11,7 +11,7 @@ const DesktopNav = ({ scroll, navItems }) => (
       <ul className={`navigation__items`}>
         {navItems.map((item, index) => (
           <li className={`item`} key={index}>
-            <a className={`link`} href={item.link}>{item.name}</a>
+            <Link className={`link`} to={item.link}>{item.name}</Link>
           </li>
         ))}
         <li className={`item`} key={4}>

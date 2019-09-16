@@ -20,18 +20,28 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-12390630-18`,
-        anonymize: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: `UA-12390630-18`,
+    //     anonymize: true,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "UA-12390630-18",
         includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-12390630-18',
+          anonymize: true
+        },
+        environments: ['production', 'development']
       },
     },
     `gatsby-transformer-remark`,

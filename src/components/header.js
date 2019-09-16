@@ -4,9 +4,9 @@ import MobileNav from "./mobile-nav";
 import DesktopNav from "./desktop-nav";
 
 const navItems = [
-  { name: "About", link: "#nerds" },
-  { name: "YouTube", link: "#youtube" },
-  { name: "Training", link: "#training" },
+  { name: "About", link: "/#nerds" },
+  { name: "YouTube", link: "/#youtube" },
+  { name: "Training", link: "/#training" },
 ];
 
 const Header = () => {
