@@ -56,7 +56,7 @@ section {
 
   h3 {
     color: $blue;
-    padding: 10px;
+    padding: 20px 0 10px;
   }
 
   p {
@@ -104,7 +104,7 @@ section {
 .nerds {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   .image {
     border-radius: 50%;
@@ -388,14 +388,13 @@ section {
   h3 {
     font-size: 1.6rem;
     text-align: left;
-    padding: 0;
     margin-bottom: 10px;
   }
 
   ul {
     list-style: inside;
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
     text-align: left;
     margin-bottom: 10px;
     color: $black;

@@ -58,6 +58,10 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `social.png`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
