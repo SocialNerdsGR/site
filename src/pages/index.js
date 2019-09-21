@@ -11,7 +11,7 @@ import SEO from "../components/seo";
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home"/>
+      <SEO/>
 
       <div className="circle top"/>
       <div className="circle bottom"/>
