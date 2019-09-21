@@ -1,5 +1,5 @@
 ---
-title: React fundamentals
+title: React fundamentals by SocialNerds
 link: "https://www.eventbrite.com/e/react-fundamentals-socialnerds-tickets-69808694685"
 date: 11/09/2019
 summary: Learn how to build complex user interfaces with React, by participating in SocialNerds 8-hour workshop. 
@@ -7,6 +7,8 @@ image: images/react.png
 type: workshops
 banner: images/2019-11-09-react-fundamentals.jpg
 ---
+
+<iframe height="315" src="https://www.youtube.com/embed/M8kvLzDoGzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Nowadays, systems require complex user interfaces and React is one of the best libraries to build them. Learn how to build these user interfaces by participating in SocialNerds 8-hour React Workshop.
 

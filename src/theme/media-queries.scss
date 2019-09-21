@@ -43,6 +43,10 @@
 
   .workshop {
     padding: 0 20px;
+    iframe {
+      height: 200px;
+      margin: 10px 0;
+    }
     h1 {
       font-size: 1.6rem;
     }

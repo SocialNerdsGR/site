@@ -40,7 +40,6 @@ const Workshops = () => {
     <Layout>
       <SEO title="Workshops"/>
       <div className="container workshops">
-        <h3>Upcoming workshops</h3>
         <div className="cards">
           {workshops.map(workshop => (
             <Link to={workshop.node.fields.slug} className={`card`} key={workshop.node.id}>

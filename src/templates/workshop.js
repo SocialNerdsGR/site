@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Image from 'gatsby-image';
+import Image from "gatsby-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -18,16 +18,26 @@ class BlogPostTemplate extends React.Component {
         />
         <div className="container">
           <article className={`workshop`}>
-            <Image className={`banner`} fluid={post.frontmatter.banner.childImageSharp.fluid} />
-              <h1>{post.frontmatter.title}</h1>
-              <a className={`ticket`} href={post.frontmatter.link}>Buy a ticket</a>
+            <Image className={`banner`} fluid={post.frontmatter.banner.childImageSharp.fluid}/>
+            <h1>{post.frontmatter.title}</h1>
+            <BuyLink link={post.frontmatter.link} />
             <section dangerouslySetInnerHTML={{ __html: post.html }}/>
+            <BuyLink link={post.frontmatter.link} />
           </article>
         </div>
       </Layout>
     );
   }
 }
+
+const BuyLink = ({ link }) => (
+  <a target="_blank"
+     rel="noopener noreferrer"
+     className={`ticket`}
+     href={link}>
+    Buy a ticket
+  </a>
+);
 
 export default BlogPostTemplate;
 
