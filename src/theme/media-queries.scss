@@ -6,11 +6,21 @@
     display: none;
   }
 
-  .logo-wrapper {
-    height: auto;
+  .intro {
+    h1 {
+      font-size: 4rem;
+    }
+    .actions {
+      flex-direction: column;
+    }
+    .workshops {
+      margin: 0;
+      margin-bottom: 20px;
+    }
   }
 
-  .videos, .nerds {
+  .videos,
+  .nerds {
     grid-template-columns: 1fr;
     justify-items: center;
 
@@ -33,7 +43,7 @@
       }
       form {
         button {
-          background-color: rgb(255, 255, 255);;
+          background-color: rgb(255, 255, 255);
           font-size: 0.9rem;
           padding: 0;
         }
