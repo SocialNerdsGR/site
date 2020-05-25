@@ -7,7 +7,7 @@ const Logo = () => {
     query {
       placeholderImage: file(relativePath: { eq: "logo_white.png" }) {
         childImageSharp {
-          fixed(width: 30, height: 30) {
+          fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -16,7 +16,11 @@ const Logo = () => {
   `);
 
   return (
-    <Image className={`nav-logo`} fixed={data.placeholderImage.childImageSharp.fixed} alt={`logo`}/>
+    <Image
+      className={`nav-logo`}
+      fixed={data.placeholderImage.childImageSharp.fixed}
+      alt={`logo`}
+    />
   );
 };
 

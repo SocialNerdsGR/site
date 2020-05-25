@@ -1,7 +1,7 @@
 ---
 link: "https://github.com/tkorakas"
-stack: "React, Laravel"
-image: "TK.png"
+stack: "React, JavaScript"
+image: "TK.jpeg"
 order: 2
 type: nerds
 ---

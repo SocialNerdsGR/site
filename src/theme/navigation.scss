@@ -11,7 +11,8 @@
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.75);
   }
 
-  .desktop-nav, .mobile-nav {
+  .desktop-nav,
+  .mobile-nav {
     padding: 10px 0;
   }
 
@@ -28,16 +29,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .item {
-    color: #555;
+    color: #444;
     text-decoration: none;
     margin-right: 10px;
 
     .link {
-      color: #555;
+      color: #444;
       text-decoration: none;
     }
 

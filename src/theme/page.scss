@@ -10,7 +10,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -22,29 +22,44 @@ a {
   margin: 0 auto;
 }
 
-.logo-wrapper {
+.intro {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
+  text-align: center;
 
-  .flex {
-    display: flex;
-    flex-direction: column;
+  h1 {
+    font-size: 6rem;
+    max-width: 850px;
+    color: $grey;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: $black;
   }
 
-  .hire {
-    margin-top: 10px;
+  .actions {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .workshops {
     text-decoration: none;
-    align-self: flex-end;
     @include button();
+    margin-right: 50px;
+  }
+  .mentoring {
+    @include button();
+    text-decoration: none;
+    background-color: $blue;
+    color: white;
   }
 }
-
-//
-//.logo {
-//  margin-left: 20px;
-//}
 
 // Section.
 section {
@@ -56,19 +71,21 @@ section {
 
   h3 {
     color: $blue;
+    font-size: 3rem;
     padding: 20px 0 10px;
   }
 
   p {
-    color: $grey;
-    font-size: 1.1rem;
+    color: lighten($grey, 10);
+    font-size: 1.5rem;
     padding-bottom: 40px;
   }
 
   &.dark {
     background-color: $blue;
 
-    h3, p {
+    h3,
+    p {
       color: white;
     }
   }
@@ -103,8 +120,8 @@ section {
 // Nerds.
 .nerds {
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
 
   .image {
     border-radius: 50%;
@@ -163,8 +180,7 @@ section {
 .contact {
   input {
     width: 100%;
-    border: #18a2de 1px solid;
-    border-radius: 25px;
+    border: $blue 1px solid;
     padding: 5px 0 5px 10px;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -178,11 +194,10 @@ section {
   textarea {
     width: 100%;
     border: $blue 1px solid;
-    border-radius: 25px;
     padding-left: 10px;
     padding-top: 5px;
     font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 10px;
     min-width: 100%;
     max-width: 100%;
@@ -201,7 +216,7 @@ section {
 
 // Social.
 .social {
-  background-color: #18a2de;
+  background-color: $blue;
   text-align: center;
   color: white;
   font-size: 1.4rem;
@@ -257,7 +272,8 @@ section {
       }
 
       .info {
-        p, span {
+        p,
+        span {
           padding: 10px;
         }
 
@@ -284,7 +300,8 @@ section {
   .subscribe {
     margin-top: 40px;
 
-    h2, h3 {
+    h2,
+    h3 {
       margin-top: 10px;
       text-align: center;
       color: $black;
@@ -302,7 +319,8 @@ section {
       margin: 20px 0;
       display: flex;
 
-      input, button {
+      input,
+      button {
         color: $blue;
         border: $blue 1px solid;
         border-radius: 50px;
