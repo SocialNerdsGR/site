@@ -1,6 +1,6 @@
 ---
 link: "https://github.com/matrixlord"
-stack: "Machine learning, Docker"
+name: "Thanos Nokas"
 image: "TN.png"
 order: 1
 type: nerds

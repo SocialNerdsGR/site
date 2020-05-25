@@ -38,7 +38,7 @@ const Videos = () => {
       id={"youtube"}
       dark={true}
     >
-      <div className={'videos'}>
+      <div className={"videos"}>
         {videos.edges.map(item => (
           <a
             key={item.node.id}
@@ -46,7 +46,12 @@ const Videos = () => {
             rel="noopener noreferrer"
             href={item.node.frontmatter.link}
           >
-            <Image className={`image`} imgStyle={{transition: 'all 0.5s ease-in-out'}} alt={item.node.frontmatter.stack} fluid={item.node.frontmatter.image.childImageSharp.fluid} />
+            <Image
+              className={`image`}
+              imgStyle={{ transition: "all 0.5s ease-in-out" }}
+              alt={item.node.frontmatter.stack}
+              fluid={item.node.frontmatter.image.childImageSharp.fluid}
+            />
           </a>
         ))}
       </div>

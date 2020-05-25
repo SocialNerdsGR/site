@@ -16,7 +16,7 @@ const Nerds = () => {
             id
             frontmatter {
               link
-              stack
+              name
               image {
                 childImageSharp {
                   fluid(maxWidth: 250, maxHeight: 250, quality: 80) {
@@ -33,8 +33,8 @@ const Nerds = () => {
 
   return (
     <Section
-      title={`About us`}
-      description={`We are into technology and knowledge sharing`}
+      title={`Who We Are`}
+      description={`We write code, we love code, we teach code`}
       id={`nerds`}
     >
       <div className={`nerds`}>
@@ -53,7 +53,7 @@ const Nerds = () => {
               />
             </div>
             <span className={`overlay`}>
-              <span className={`text`}>{item.node.frontmatter.stack}</span>
+              <span className={`text`}>{item.node.frontmatter.name}</span>
             </span>
           </a>
         ))}

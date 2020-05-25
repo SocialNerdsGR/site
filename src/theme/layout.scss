@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=greek-ext');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 // Generic styles.
-@import 'reset';
-@import 'variables';
-@import 'mixins';
+@import "reset";
+@import "variables";
+@import "mixins";
 
 // Pages and components.
-@import 'navigation';
-@import 'page';
+@import "navigation";
+@import "page";
 
 // Must load media queries last.
-@import 'media-queries';
-
-
+@import "media-queries";

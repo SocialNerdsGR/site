@@ -16,8 +16,10 @@ const IndexPage = () => {
       <div className="circle bottom" />
 
       <div className={`intro flex`}>
-        <h1>We will help you to skyrocket your career</h1>
-        <h2>Learn how to write production ready applications</h2>
+        <h1>
+          We will <span>help</span> you to skyrocket your <span>product</span>
+        </h1>
+        <h2>We take software seriously</h2>
         <div className="actions">
           <a className={`workshops`} href="#training">
             Workshops

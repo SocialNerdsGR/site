@@ -35,12 +35,21 @@ a {
     font-size: 6rem;
     max-width: 850px;
     color: $grey;
-    font-weight: 300;
   }
   h2 {
     font-size: 1.5rem;
     margin-top: 30px;
     color: $black;
+    span {
+      font-size: 1.6rem;
+    }
+  }
+  h1,
+  h2 {
+    font-weight: 400;
+    span {
+      color: $blue;
+    }
   }
 
   .actions {
