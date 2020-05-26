@@ -70,6 +70,10 @@ a {
     text-decoration: none;
     background-color: $primary;
     color: white;
+    &:hover {
+      color: $primary;
+      background-color: white;
+    }
   }
 }
 
