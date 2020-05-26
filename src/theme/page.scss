@@ -12,7 +12,9 @@ body {
   height: 100vh;
 }
 
-* {
+*,
+body,
+html {
   font-family: "Roboto", sans-serif;
 }
 
