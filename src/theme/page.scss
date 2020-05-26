@@ -10,6 +10,9 @@ html {
 
 body {
   height: 100vh;
+}
+
+* {
   font-family: "Roboto", sans-serif;
 }
 
@@ -34,12 +37,12 @@ a {
   h1 {
     font-size: 6rem;
     max-width: 850px;
-    color: $grey;
+    color: $secondary;
   }
   h2 {
     font-size: 1.5rem;
     margin-top: 30px;
-    color: $black;
+    color: $primary-text;
     span {
       font-size: 1.6rem;
     }
@@ -48,7 +51,7 @@ a {
   h2 {
     font-weight: 400;
     span {
-      color: $blue;
+      color: $primary;
     }
   }
 
@@ -65,7 +68,7 @@ a {
   .mentoring {
     @include button();
     text-decoration: none;
-    background-color: $blue;
+    background-color: $primary;
     color: white;
   }
 }
@@ -79,20 +82,20 @@ section {
   margin: 20px 0;
 
   h3 {
-    color: $blue;
+    color: $primary;
     font-size: 3rem;
     padding: 20px 0 10px;
     margin-bottom: 20px;
   }
 
   p {
-    color: lighten($grey, 10);
+    color: lighten($secondary, 10);
     font-size: 1.5rem;
     padding-bottom: 40px;
   }
 
   &.dark {
-    background-color: $blue;
+    background-color: $primary;
 
     h3,
     p {
@@ -105,7 +108,7 @@ section {
 .circle {
   z-index: 1000;
   position: absolute;
-  background: $light-blue;
+  background: $primary-light;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -120,11 +123,6 @@ section {
     top: calc(100% - 280px);
     left: -150px;
   }
-}
-
-.logo-image {
-  width: 500px;
-  height: 500px;
 }
 
 // Nerds.
@@ -152,7 +150,7 @@ section {
     left: 0;
     right: 0;
     opacity: 0;
-    background-color: $blue;
+    background-color: $primary;
     border-radius: 50%;
     z-index: 2;
     @include generic-transition(opacity);
@@ -187,10 +185,11 @@ section {
   }
 }
 
+// Contact
 .contact {
   input {
     width: 100%;
-    border: $blue 1px solid;
+    border: $primary 1px solid;
     padding: 10px;
     font-size: 1.8rem;
     margin-bottom: 10px;
@@ -203,10 +202,9 @@ section {
 
   textarea {
     width: 100%;
-    border: $blue 1px solid;
+    border: $primary 1px solid;
     padding: 10px;
     font-size: 1.8rem;
-    font-family: "Roboto", sans-serif;
     margin-bottom: 10px;
     min-width: 100%;
     max-width: 100%;
@@ -225,7 +223,7 @@ section {
 
 // Social.
 .social {
-  background-color: $blue;
+  background-color: $primary;
   text-align: center;
   color: white;
   font-size: 2rem;
@@ -249,5 +247,30 @@ section {
   text-align: center;
   padding: 5px;
   font-size: 1.2rem;
-  color: $grey;
+  color: $secondary;
+}
+
+// 404 page
+.not-found-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  h1 {
+    font-size: 7rem;
+    color: $primary-text;
+  }
+  div {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $secondary;
+    a {
+      color: $primary;
+      @include generic-transition(color);
+      &:hover {
+        color: $primary-light;
+      }
+    }
+  }
 }

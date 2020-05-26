@@ -31,10 +31,10 @@
     .link {
       transition: all 250ms ease-in-out;
 
-      color: $black;
+      color: $primary-text;
       text-decoration: none;
       &:hover {
-        color: $blue;
+        color: $primary;
       }
     }
   }
@@ -63,7 +63,7 @@
 
       .line {
         height: 5px;
-        background: $blue;
+        background: $primary;
         border-radius: 5px;
         margin: 3px 0px;
         transform-origin: left;

@@ -3,14 +3,14 @@
 }
 
 @mixin button {
-  color: $blue;
+  color: $primary;
   background-color: white;
   font-size: 1.6rem;
   padding: 20px 20px;
-  border: $blue 1px solid;
+  border: $primary 1px solid;
   @include generic-transition(all);
   &:hover {
-    background-color: $blue;
+    background-color: $primary;
     color: white;
   }
 }
