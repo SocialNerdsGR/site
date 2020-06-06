@@ -6,7 +6,8 @@ import DesktopNav from "./desktop-nav";
 const navItems = [
   { name: "About", link: "/#nerds" },
   { name: "YouTube", link: "/#youtube" },
-  { name: "Training", link: "/#training" },
+  { name: "Hire us", link: "/#hire-us" },
+  { name: "Workshops", link: "/#workshops" },
 ];
 
 const Header = () => {

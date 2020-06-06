@@ -61,12 +61,12 @@ a {
     margin-top: 50px;
   }
 
-  .workshops {
+  .workshops-link {
     text-decoration: none;
     @include button();
     margin-right: 50px;
   }
-  .mentoring {
+  .hire-us-link {
     @include button();
     text-decoration: none;
     background-color: $primary;
@@ -101,12 +101,18 @@ section {
 
   &.dark {
     background-color: $primary;
-
     h3,
     p {
       color: white;
     }
   }
+}
+
+.divider {
+  padding: 2px 0;
+  background-color: $primary;
+  transform: skewY(-6deg);
+  margin: 100px 0;
 }
 
 // Home section.
@@ -127,6 +133,42 @@ section {
   &.bottom {
     top: calc(100% - 280px);
     left: -150px;
+  }
+}
+
+// Workshops.
+.workshops {
+  .link-wrapper {
+    padding: 100px 0;
+  }
+  .workshops-link {
+    @include button();
+    text-decoration: none;
+    background-color: $primary;
+    color: white;
+    &:hover {
+      color: $primary;
+      background-color: white;
+    }
+  }
+  .workshop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .image {
+      width: 200px;
+      text-align: end;
+    }
+    .info {
+      text-align: start;
+    }
+  }
+  .workshop:nth-child(even) {
+    .info {
+      order: 1;
+      text-align: end;
+    }
   }
 }
 
@@ -222,6 +264,13 @@ section {
 
   button {
     @include button();
+    cursor: pointer;
+    background-color: $primary;
+    color: white;
+    &:hover {
+      color: $primary;
+      background-color: white;
+    }
     width: 100%;
   }
 }

@@ -4,12 +4,12 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/workshop.js`);
+  const blogPost = path.resolve(`./src/templates/blog-posts.js`);
   const result = await graphql(
     `
       {
         allMarkdownRemark(
-          filter: { frontmatter: { type: { eq: "workshops" } } }
+          filter: { frontmatter: { type: { eq: "posts" } } }
           limit: 1000
         ) {
           edges {
@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    `,
+    `
   );
 
   if (result.errors) {

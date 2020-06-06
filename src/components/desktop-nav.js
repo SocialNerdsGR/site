@@ -6,17 +6,16 @@ const DesktopNav = ({ scroll, navItems }) => (
   <div className={`desktop-nav ${scroll && `scroll`}`}>
     <div className={`container`}>
       <Link to="/">
-        <Logo/>
+        <Logo />
       </Link>
       <ul className={`navigation__items`}>
         {navItems.map((item, index) => (
           <li className={`item`} key={index}>
-            <Link className={`link`} to={item.link}>{item.name}</Link>
+            <Link className={`link`} to={item.link}>
+              {item.name}
+            </Link>
           </li>
         ))}
-        <li className={`item`} key={4}>
-          <Link className={`link`} to={"/workshops"}>Workshops</Link>
-        </li>
       </ul>
     </div>
   </div>
