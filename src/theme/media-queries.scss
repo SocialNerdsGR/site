@@ -1,4 +1,8 @@
 @media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .navigation .mobile-nav {
     display: flex;
   }
@@ -10,7 +14,11 @@
     h1 {
       font-size: 3rem;
     }
+    max-width: 90%;
+    margin: 0 auto;
+
     .actions {
+      width: 100%;
       flex-direction: column;
     }
     .workshops-link {

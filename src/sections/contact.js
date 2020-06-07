@@ -18,7 +18,13 @@ const Contact = () => {
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <input type="email" name="email" placeholder={`Email`} required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder={`Email`}
+          required
+        />
         <input type="text" name="name" placeholder={`Name`} required />
         <textarea
           name="message"

@@ -34,22 +34,19 @@ const Workshops = () => {
   return (
     <Section
       title={`Workshops`}
-      description={`Learn modern technologies the right way and elevate your skills`}
+      description={`Learn modern technologies the right way & elevate your skills`}
       id={"workshops"}
     >
       <div className="workshops">
-        <div className="link-wrapper">
+        {workshops.edges.map(item => (
           <a
             href="https://socialnerdsgr.eventbrite.com"
             target="_blank"
             rel="noreferrer"
             className="workshops-link"
+            className="workshop"
+            key={item.node.id}
           >
-            Book a sheet
-          </a>
-        </div>
-        {workshops.edges.map(item => (
-          <div className="workshop" key={item.node.id}>
             <div className="info">
               <h3>{item.node.frontmatter.name}</h3>
               <p>{item.node.frontmatter.description}</p>
@@ -57,12 +54,11 @@ const Workshops = () => {
             <div className="logo">
               <Image
                 className={`image`}
-                imgStyle={{ transition: "all 0.5s ease-in-out" }}
                 alt={item.node.frontmatter.stack}
                 fluid={item.node.frontmatter.image.childImageSharp.fluid}
               />
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </Section>
