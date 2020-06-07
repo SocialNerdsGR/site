@@ -4,10 +4,10 @@ import MobileNav from "./mobile-nav";
 import DesktopNav from "./desktop-nav";
 
 const navItems = [
+  { name: "Workshops", link: "/#workshops" },
   { name: "About", link: "/#nerds" },
   { name: "YouTube", link: "/#youtube" },
   { name: "Hire us", link: "/#hire-us" },
-  { name: "Workshops", link: "/#workshops" },
 ];
 
 const Header = () => {
