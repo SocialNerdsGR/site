@@ -1,0 +1,48 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+
+  h1 {
+    font-size: 6rem;
+    max-width: 850px;
+    color: $primary-text;
+    span {
+      color: $primary;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: $primary-text;
+    span {
+      font-size: 1.6rem;
+    }
+  }
+
+  .actions {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .workshops-link {
+    text-decoration: none;
+    @include button();
+    margin-right: 50px;
+  }
+  .hire-us-link {
+    @include button();
+    text-decoration: none;
+    background-color: $primary;
+    color: white;
+    &:hover {
+      color: $primary;
+      background-color: white;
+    }
+  }
+}

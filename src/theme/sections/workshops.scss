@@ -1,0 +1,33 @@
+.workshops {
+  .workshops__link {
+    @include button();
+    text-decoration: none;
+    background-color: $primary;
+    color: white;
+    &:hover {
+      color: $primary;
+      background-color: white;
+    }
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .workshops__image {
+      width: 200px;
+      text-align: end;
+    }
+    .workshops__image {
+      text-align: start;
+    }
+    &:not(:last-child) {
+      margin-bottom: $margin;
+    }
+  }
+  &__item:nth-child(even) {
+    .workshops__info {
+      order: 1;
+      text-align: end;
+    }
+  }
+}

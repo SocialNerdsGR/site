@@ -1,0 +1,17 @@
+.button {
+  font-size: 1.6rem;
+  padding: $padding;
+  border: $primary 1px solid;
+  @include generic-transition(all);
+
+  &--dark {
+    color: $primary;
+    background-color: white;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+  &--light {
+  }
+}

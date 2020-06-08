@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
-import Logo from "./logo";
-import Burger from "./mobile-navigation/burger";
-import Drawer from "./mobile-navigation/drawer";
+import Logo from "../Logo";
+import Burger from "./Burger";
+import Drawer from "./Drawer";
 
-const MobileNav = ({ scroll, navItems }) => {
+const MobileNav = ({ navItems }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function toggleMenu() {
@@ -14,7 +14,7 @@ const MobileNav = ({ scroll, navItems }) => {
 
   return (
     <>
-      <div className={`mobile-nav ${scroll && `scroll`}`}>
+      <div className={`mobile-nav`}>
         <Link to="/">
           <Logo />
         </Link>

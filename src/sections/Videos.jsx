@@ -2,7 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
 
-import Section from "../components/section";
+import Section from "../components/Section";
 
 const Videos = () => {
   const { allMarkdownRemark: videos } = useStaticQuery(graphql`

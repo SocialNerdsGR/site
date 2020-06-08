@@ -1,0 +1,43 @@
+.contact {
+  &__input {
+    width: 100%;
+    border: $primary-light 1px solid;
+    padding: $padding / 2;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+    &:focus {
+      border: $primary 1px solid;
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    border: $primary-light 1px solid;
+    padding: $padding / 2;
+    font-size: 1.8rem;
+    margin-bottom: $margin;
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    &:focus {
+      border: $primary 1.2px solid;
+      outline: none;
+    }
+  }
+
+  button {
+    @include button();
+    cursor: pointer;
+    background-color: $primary;
+    color: white;
+    &:hover {
+      color: $primary;
+      background-color: white;
+    }
+    width: 100%;
+  }
+}

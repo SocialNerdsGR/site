@@ -5,9 +5,9 @@
 @import "variables";
 @import "mixins";
 
-// Pages and components.
-@import "navigation";
 @import "page";
+@import "components/index";
+@import "sections/index";
 
 // Must load media queries last.
 @import "media-queries";

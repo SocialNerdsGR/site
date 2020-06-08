@@ -1,0 +1,19 @@
+.circle {
+  z-index: 1000;
+  position: absolute;
+  background: $primary-light;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &--top {
+    bottom: calc(100% - 360px);
+    left: calc(100% - 150px);
+  }
+
+  &--bottom {
+    top: calc(100% - 280px);
+    left: -150px;
+  }
+}

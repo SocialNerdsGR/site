@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
-import Logo from "./logo";
+import Logo from "../logo";
 
-const DesktopNav = ({ scroll, navItems }) => (
-  <div className={`desktop-nav ${scroll && `scroll`}`}>
+const DesktopNav = ({ navItems }) => (
+  <div className={`desktop-nav`}>
     <div className={`container`}>
       <Link to="/">
         <Logo />
       </Link>
       <ul className={`navigation__items`}>
         {navItems.map((item, index) => (
-          <li className={`item`} key={index}>
-            <Link className={`link`} to={item.link}>
+          <li className={`navigation__item`} key={index}>
+            <Link className={`navigation__link`} to={item.link}>
               {item.name}
             </Link>
           </li>

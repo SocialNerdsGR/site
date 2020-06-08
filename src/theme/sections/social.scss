@@ -1,0 +1,19 @@
+.social {
+  background-color: $primary;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: auto;
+  padding: $padding / 2;
+
+  .image {
+    width: 3rem;
+    fill: white;
+    margin: 0 $margin 0 0;
+    @include generic-transition(filter);
+
+    &:hover {
+      filter: opacity(0.8);
+    }
+  }
+}

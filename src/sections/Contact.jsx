@@ -1,6 +1,6 @@
 import React from "react";
 
-import Section from "../components/section";
+import Section from "../components/Section";
 
 const Contact = () => {
   return (
@@ -19,14 +19,22 @@ const Contact = () => {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <input
+          className="contact__input"
           type="email"
           id="email"
           name="email"
           placeholder={`Email`}
           required
         />
-        <input type="text" name="name" placeholder={`Name`} required />
+        <input
+          className="contact__input"
+          type="text"
+          name="name"
+          placeholder={`Name`}
+          required
+        />
         <textarea
+          className="contact__textarea"
           name="message"
           placeholder={`Tell us what you need`}
           required

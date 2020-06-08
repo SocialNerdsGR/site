@@ -1,0 +1,42 @@
+.nerds {
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: repeat(2, 1fr);
+
+  .image {
+    border-radius: 50%;
+  }
+
+  .link {
+    position: relative;
+
+    &:hover .overlay {
+      opacity: 0.8;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: $primary;
+    border-radius: 50%;
+    z-index: 2;
+    @include generic-transition(opacity);
+
+    .text {
+      color: white;
+      font-size: 4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}

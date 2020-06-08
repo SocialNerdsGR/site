@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
-
-import useScrollMount from "../../helpers/useLockScroll";
+import useLockBodyScroll from "../../helpers/useLockBodyScroll";
 
 const Drawer = ({ setMenuOpen, navItems }) => {
-  useScrollMount();
+  useLockBodyScroll();
   return (
     <div className={`drawer`}>
-      <ul className={`items`} onClick={() => setMenuOpen(false)}>
+      <ul className={`drawer__items`} onClick={() => setMenuOpen(false)}>
         {navItems.map((item, index) => (
-          <li className={`item`} key={index}>
-            <Link className={`link`} to={item.link}>
+          <li className={`navigation__item drawer__item `} key={index}>
+            <Link className={`navigation__link drawer__link `} to={item.link}>
               {item.name}
             </Link>
           </li>

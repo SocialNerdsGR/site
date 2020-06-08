@@ -2,7 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
 
-import Section from "../components/section";
+import Section from "../components/Section";
 
 const Workshops = () => {
   const { allMarkdownRemark: workshops } = useStaticQuery(graphql`
@@ -43,17 +43,15 @@ const Workshops = () => {
             href="https://socialnerdsgr.eventbrite.com"
             target="_blank"
             rel="noreferrer"
-            className="workshops-link"
-            className="workshop"
+            className="workshops__item"
             key={item.node.id}
           >
-            <div className="info">
+            <div className="workshops__info">
               <h3>{item.node.frontmatter.name}</h3>
               <p>{item.node.frontmatter.description}</p>
             </div>
-            <div className="logo">
+            <div className="workshops__image">
               <Image
-                className={`image`}
                 alt={item.node.frontmatter.stack}
                 fluid={item.node.frontmatter.image.childImageSharp.fluid}
               />

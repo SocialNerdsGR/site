@@ -1,0 +1,14 @@
+.videos {
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    @include generic-transition(filter);
+    filter: grayscale(50%);
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
