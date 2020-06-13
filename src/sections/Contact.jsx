@@ -1,6 +1,7 @@
 import React from "react";
 
 import Section from "../components/Section";
+import Button from "../components/Button";
 
 const Contact = () => {
   return (
@@ -40,7 +41,9 @@ const Contact = () => {
           required
           rows={`5`}
         />
-        <button type="submit">Send</button>
+        <Button color="dark" full type="submit">
+          Send
+        </Button>
       </form>
     </Section>
   );
