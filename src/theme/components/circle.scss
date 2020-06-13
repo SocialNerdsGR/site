@@ -16,4 +16,8 @@
     top: calc(100% - 280px);
     left: -150px;
   }
+
+  @media (max-width: 960px) {
+    display: none;
+  }
 }

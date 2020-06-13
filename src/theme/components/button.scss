@@ -1,18 +1,24 @@
 .button {
-  font-size: 1.6rem;
+  font-size: $font-size;
   padding: $padding;
-  border: $primary 1px solid;
+  border: $primary $border-size solid;
   @include generic-transition(all);
 
   &--dark {
+    color: white;
+    background-color: $primary;
+    &:hover {
+      background-color: white;
+      color: $primary;
+    }
+  }
+  &--light {
     color: $primary;
     background-color: white;
     &:hover {
       background-color: $primary;
       color: white;
     }
-  }
-  &--light {
   }
   &--full {
     width: 100%;

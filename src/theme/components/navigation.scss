@@ -51,6 +51,14 @@
       margin-left: 20px;
     }
   }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .mobile-nav {
+      display: flex;
+    }
+    .desktop-nav {
+      display: none;
+    }
+  }
 }
 
 .drawer {

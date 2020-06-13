@@ -7,21 +7,21 @@ export default function Home() {
       <Circle position="top" />
       <Circle position="bottom" />
 
-      <div className={`intro flex`}>
-        <h1>
+      <div className="home">
+        <h1 className="home__title">
           We will <span>help</span> you to skyrocket your <span>product</span>
         </h1>
-        <h2>We take software seriously</h2>
-        <div className="actions">
+        <h2 className="home__tagline">We take software seriously</h2>
+        <div className="home__actions">
           <a
-            className={`workshops-link`}
+            className={`home__workshops-link`}
             target="_blank"
             rel="noreferrer"
             href="https://socialnerdsgr.eventbrite.com"
           >
             Workshops
           </a>
-          <a className={`hire-us-link`} href="#hire-us">
+          <a className={`home__hire-us-link`} href="#hire-us">
             Hire us
           </a>
         </div>

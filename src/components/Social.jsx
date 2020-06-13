@@ -25,7 +25,7 @@ const Social = () => {
       {social.edges.map((item, index) => (
         <a href={item.node.frontmatter.link} key={index}>
           <img
-            className={`image`}
+            className={`social__image`}
             src={item.node.frontmatter.image.publicURL}
             alt={item.node.frontmatter.name}
           />

@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 import Logo from "../Logo";
+import Container from "../Container";
 
 const DesktopNav = ({ navItems }) => (
   <div className={`desktop-nav`}>
-    <div className={`container`}>
+    <Container>
       <Link to="/">
         <Logo />
       </Link>
@@ -17,7 +18,7 @@ const DesktopNav = ({ navItems }) => (
           </li>
         ))}
       </ul>
-    </div>
+    </Container>
   </div>
 );
 

@@ -47,8 +47,10 @@ const Workshops = () => {
             key={item.node.id}
           >
             <div className="workshops__info">
-              <h3>{item.node.frontmatter.name}</h3>
-              <p>{item.node.frontmatter.description}</p>
+              <h3 className="workshops__title">{item.node.frontmatter.name}</h3>
+              <p className="workshops__description">
+                {item.node.frontmatter.description}
+              </p>
             </div>
             <div className="workshops__image">
               <Image

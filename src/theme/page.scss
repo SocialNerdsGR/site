@@ -24,6 +24,9 @@ a {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 0 20px;
+  }
 }
 
 // Footer section.
@@ -55,6 +58,12 @@ a {
       &:hover {
         color: $primary-light;
       }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    h1 {
+      font-size: 3rem;
     }
   }
 }

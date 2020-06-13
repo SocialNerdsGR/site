@@ -7,6 +7,13 @@ $primary-light: adjust-color($primary, $alpha: -0.4);
 $padding: 20px;
 $margin: 50px;
 
+$border-size: 1px;
+$focued-border-size: $border-size + 0.5px;
+
+$image-size: 300px;
+$mobile-image-size: 250px;
+
+$font-size: 1.6rem;
 $grid-gap: 20px;
 
 $mobile-media-query-min: 320px;

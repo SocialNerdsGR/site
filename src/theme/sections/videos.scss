@@ -3,12 +3,21 @@
   grid-gap: $grid-gap;
   grid-template-columns: repeat(3, 1fr);
 
-  img {
+  &__image {
     @include generic-transition(filter);
     filter: grayscale(50%);
+    width: $image-size;
 
     &:hover {
       filter: grayscale(0%);
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__image {
+      width: $mobile-image-size;
     }
   }
 }

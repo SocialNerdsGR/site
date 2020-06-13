@@ -1,25 +1,29 @@
 .workshops {
-  .workshops__link {
-    @include button();
-    text-decoration: none;
-    background-color: $primary;
-    color: white;
-    &:hover {
-      color: $primary;
-      background-color: white;
-    }
-  }
   &__item {
+    color: $primary;
+    text-decoration: none;
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    .workshops__info {
+      text-align: start;
+      .workshops__title {
+        color: $primary;
+        font-size: $font-size * 2;
+        padding: $padding 0;
+        margin-bottom: $margin / 2;
+      }
+      .workshops__description {
+        color: $primary-text;
+      }
+    }
+
     .workshops__image {
-      width: 200px;
+      width: $image-size / 2;
       text-align: end;
     }
-    .workshops__image {
-      text-align: start;
-    }
+
     &:not(:last-child) {
       margin-bottom: $margin;
     }
@@ -28,6 +32,26 @@
     .workshops__info {
       order: 1;
       text-align: end;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &__item {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .workshops__info {
+        text-align: center;
+      }
+      .workshops__info:nth-child(odd) {
+        order: 0;
+        text-align: center;
+      }
+      .workshops__description {
+        margin-bottom: $margin;
+      }
     }
   }
 }

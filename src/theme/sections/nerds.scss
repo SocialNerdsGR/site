@@ -3,19 +3,19 @@
   grid-gap: $grid-gap;
   grid-template-columns: repeat(2, 1fr);
 
-  .image {
+  &__image {
     border-radius: 50%;
   }
 
-  .link {
+  &__link {
     position: relative;
 
-    &:hover .overlay {
+    &:hover .nerds__overlay {
       opacity: 0.8;
     }
   }
 
-  .overlay {
+  &__overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -27,9 +27,9 @@
     z-index: 2;
     @include generic-transition(opacity);
 
-    .text {
+    .nerds__text {
       color: white;
-      font-size: 4rem;
+      font-size: $font-size * 2;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -38,5 +38,9 @@
       transform: translate(-50%, -50%);
       text-align: center;
     }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    grid-template-columns: 1fr;
   }
 }

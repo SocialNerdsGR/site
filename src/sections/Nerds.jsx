@@ -44,16 +44,18 @@ const Nerds = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={item.node.frontmatter.link}
-            className={`link`}
+            className={`nerds__link`}
           >
             <div>
               <Image
-                className={`image`}
+                className={`nerds__image`}
                 fluid={item.node.frontmatter.image.childImageSharp.fluid}
               />
             </div>
-            <span className={`overlay`}>
-              <span className={`text`}>{item.node.frontmatter.name}</span>
+            <span className={`nerds__overlay`}>
+              <span className={`nerds__text`}>
+                {item.node.frontmatter.name}
+              </span>
             </span>
           </a>
         ))}

@@ -1,4 +1,4 @@
-.intro {
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
   width: 100vw;
   text-align: center;
 
-  h1 {
+  &__title {
     font-size: 6rem;
     max-width: 850px;
     color: $primary-text;
@@ -16,26 +16,26 @@
     }
   }
 
-  h2 {
+  &__tagline {
     font-size: 1.5rem;
-    margin-top: 30px;
+    margin-top: $margin;
     color: $primary-text;
     span {
       font-size: 1.6rem;
     }
   }
 
-  .actions {
+  &__actions {
     display: flex;
-    margin-top: 50px;
+    margin-top: $margin * 2;
   }
 
-  .workshops-link {
+  &__workshops-link {
     text-decoration: none;
     @include button();
-    margin-right: 50px;
+    margin-right: $margin;
   }
-  .hire-us-link {
+  &__hire-us-link {
     @include button();
     text-decoration: none;
     background-color: $primary;
@@ -43,6 +43,26 @@
     &:hover {
       color: $primary;
       background-color: white;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    max-width: 90%;
+    margin: 0 auto;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__actions {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__workshops-link {
+      margin: 0;
+      margin-bottom: $margin / 2;
+    }
+    &__actions {
+      margin-top: $margin;
     }
   }
 }
