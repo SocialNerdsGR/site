@@ -3,6 +3,7 @@
   padding: $padding;
   border: $primary $border-size solid;
   @include generic-transition(all);
+  cursor: pointer;
 
   &--dark {
     color: white;

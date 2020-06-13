@@ -26,7 +26,7 @@
 
   .navigation__item {
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: $margin / 2;
 
     .navigation__link {
       transition: all 250ms ease-in-out;
@@ -48,7 +48,7 @@
     display: none;
     z-index: 1000;
     .nav-logo {
-      margin-left: 20px;
+      margin-left: $margin / 2;
     }
   }
   @media (min-width: 320px) and (max-width: 767px) {
