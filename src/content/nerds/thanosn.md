@@ -1,7 +1,7 @@
 ---
-link: "https://github.com/matrixlord"
+link: "https://www.linkedin.com/in/thanosnokas/"
 name: "Thanos Nokas"
-image: "TN.png"
+image: "TN.jpeg"
 order: 1
 type: nerds
 ---
