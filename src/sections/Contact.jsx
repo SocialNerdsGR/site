@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Section
       title={`Need help with your amazing project?`}
-      description={`Let us mentor you on React, Docker, Laravel, Testing methodologies!`}
+      description={`Let us mentor you on React, Docker, and Agile methodologies.`}
       id={"hire-us"}
     >
       <form
@@ -42,7 +42,7 @@ const Contact = () => {
           rows={`5`}
         />
         <Button color="dark" full type="submit">
-          Send
+          Hire us
         </Button>
       </form>
     </Section>

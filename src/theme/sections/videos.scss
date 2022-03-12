@@ -1,7 +1,10 @@
 .videos {
   display: grid;
   grid-gap: $grid-gap;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  max-width: $section-max-width;
+  margin: 0 auto;
 
   &__image {
     @include generic-transition(filter);

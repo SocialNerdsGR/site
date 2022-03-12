@@ -1,4 +1,7 @@
 .workshops {
+  max-width: $section-max-width;
+  margin: 0 auto;
+
   &__item {
     color: $primary;
     text-decoration: none;
@@ -12,7 +15,6 @@
         color: $primary;
         font-size: $font-size * 2;
         padding: $padding 0;
-        margin-bottom: $margin / 2;
       }
       .workshops__description {
         color: $primary-text;
@@ -48,9 +50,6 @@
       .workshops__info:nth-child(odd) {
         order: 0;
         text-align: center;
-      }
-      .workshops__description {
-        margin-bottom: $margin;
       }
     }
   }
