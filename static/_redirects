@@ -1,2 +1,11 @@
-/salary-survey  https://forms.gle/49xbfH9CDkaDHkRp6
-/salary-survey-results https://bit.ly/2VygFBy
+[[redirects]]
+  from = "/salary-survey"
+  to = "https://forms.gle/49xbfH9CDkaDHkRp6"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/salary-survey-results"
+  to = "https://bit.ly/2VygFBy"
+  status = 302
+  force = true
