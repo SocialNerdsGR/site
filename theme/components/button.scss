@@ -1,0 +1,28 @@
+.button {
+  font-size: $font-size;
+  padding: $padding;
+  border: $primary $border-size solid;
+  border-radius: 15px;
+  @include generic-transition(all);
+  cursor: pointer;
+
+  &--dark {
+    color: white;
+    background-color: $primary;
+    &:hover {
+      background-color: white;
+      color: $primary;
+    }
+  }
+  &--light {
+    color: $primary;
+    background-color: white;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+  &--full {
+    width: 100%;
+  }
+}

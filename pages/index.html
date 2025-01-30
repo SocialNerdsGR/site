@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SocialNerds</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png"/>
+  <meta name="description" content="Agile Web Development. We are a community. Hire us for your amazing project on Agile, React, Symfony, Laravel, Drupal, Testing methodologies."/>
+  <meta property="og:title" content="SocialNerds"/>
+  <meta property="og:description" content="Agile Web Development. We are a community. Hire us for your amazing project on Agile, React, Symfony, Laravel, Drupal, Testing methodologies."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="../assets/social.png"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:creator" content="SocialNerds"/>
+  <meta name="twitter:title" content="SocialNerds"/>
+  <meta name="twitter:description" content="Agile Web Development. We are a community. Hire us for your amazing project on Agile, React, Symfony, Laravel, Drupal, Testing methodologies."/>
+  <link rel="icon" type="image/png" href="../assets/logo_white.png">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'UA-12390630-18');</script>
+  <link rel="stylesheet" href="../theme/styles.scss">
+</head>
+<body>
+  <nav class="navigation">
+    <div class="desktop-nav">
+      <div class="container">
+        <a href="/">
+          <img class="nav-logo" src="../assets/logo_white.png" alt="logo" width="50" height="50">
+        </a>
+        <ul class="navigation__items">
+          <li class="navigation__item"><a class="navigation__link" href="/#nerds">About</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/#videos">YouTube</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="/#contact">Hire us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="circle circle--top"></div>
+    <div class="circle circle--bottom"></div>
+    <div class="home">
+      <h1 class="home__title">
+        We will <span>help</span> you skyrocket your <span>product</span>
+      </h1>
+      <h2 class="home__tagline">We take software seriously</h2>
+      <!-- <div class="home__actions">
+        <a
+          class="home__workshops-link"
+          target="_blank"
+          rel="noreferrer"
+          href="https://socialnerdsgr.eventbrite.com"
+        >
+          Workshops
+        </a>
+        <a class="home__hire-us-link" href="#hire-us">
+          Hire us
+        </a>
+      </div> -->
+    </div>
+    <!-- <section class="section" id="workshops">
+      <div class="container">
+        <h3 class="section__title">Workshops</h3>
+        <p class="section__description">Learn modern technologies the right way & elevate your skills</p>
+      </div>
+    </section> -->
+
+    <section class="section" id="nerds">
+      <div class="container">
+        <h3 class="section__title">Who We Are</h3>
+        <p class="section__description">We write code, we love code, we teach code</p>
+        <div class="nerds">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/thanosnokas/"
+            class="nerds__link"
+          >
+            <div>
+              <img
+                class="nerds__image"
+                src="../assets/TN.jpeg"
+              />
+            </div>
+            <span class="nerds__overlay">
+              <span class="nerds__text">
+                Thanos Nokas
+              </span>
+            </span>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/tkorakas"
+            class="nerds__link"
+          >
+            <div>
+              <img
+                class="nerds__image"
+                src="../assets/TK.jpeg"
+              />
+            </div>
+            <span class="nerds__overlay">
+              <span class="nerds__text">
+                Thanos Korakas
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="videos">
+      <div class="container">
+        <h3 class="section__title">YouTube</h3>
+        <p class="section__description">Join SocialNerds community! Check out our YouTube videos        </p>
+        <div class="videos">
+          <a
+            class="videos__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/watch?v=9f9AAZfZA78&list=PLuswtImoIwq_gv6MbaHN4jD7JfAO9mxrQ"
+          >
+            <img
+              class="videos__image"
+              src="../assets/docker-video.png"
+              alt="Docker"
+            />
+          </a>
+          <a
+            class="videos__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/watch?v=0xppiei2_rk&list=PLuswtImoIwq-Gk4cvAIFK5TdK4q9Zt08B"
+          >
+            <img
+              class="videos__image"
+              alt="React"
+              src="../assets/react-video.png"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="container">
+        <h3 class="section__title">Need help with your amazing project?</h3>
+        <p class="section__description">Let us mentor you on React, Docker, and Agile methodologies.</p>
+        <form
+        name="contact"
+        method="POST"
+        data-netlify={true}
+        action="/workshops"
+        class="contact"
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+        <input
+          class="contact__input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="contact__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <textarea
+          class="contact__textarea"
+          name="message"
+          placeholder="Tell us what you need"
+          required
+          rows="5"
+        />
+        <button class="button button--dark button--full">
+          Hire us
+        </button>
+      </form>
+      </div>
+    </section>
+  </main>
+  <section class="social">
+    <a href="https://facebook.com/SocialNerdsGR">
+      <img class="social__image" src="../assets/facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://github.com/SocialNerds">
+      <img class="social__image" src="../assets/github.svg" alt="YouTube">
+    </a>
+    <a href="https://twitter.com/socialnerdsgr">
+      <img class="social__image" src="../assets/twitter.svg" alt="Twitter">
+    </a>
+    <a href="https://youtube.com/SocialNerdsGR">
+      <img class="social__image" src="../assets/youtube.svg" alt="YouTube">
+    </a>
+  </section>
+  <footer class="footer">
+    Copyright © 2025, SocialNerds
+  </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.navigation {
+  background-color: white;
+  z-index: 0;
+
+  .desktop-nav {
+    padding: $padding 0;
+  }
+
+  .desktop-nav {
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .navigation__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+  .navigation__item {
+    text-decoration: none;
+    margin-right: $margin / 2;
+
+    .navigation__link {
+      transition: all 250ms ease-in-out;
+
+      color: $primary-text;
+      text-decoration: none;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

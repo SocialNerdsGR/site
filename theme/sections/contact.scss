@@ -1,0 +1,33 @@
+.contact {
+  &__input {
+    width: 100%;
+    border: $primary-light $border-size solid;
+    padding: $padding / 2;
+    font-size: $font-size;
+    margin-bottom: $padding;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    &:focus {
+      border: $primary $focued-border-size solid;
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    border: $primary-light $border-size solid;
+    padding: $padding / 2;
+    font-size: $font-size;
+    margin-bottom: $margin;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    &:focus {
+      border: $primary $focued-border-size solid;
+      outline: none;
+    }
+  }
+}
